@@ -78,19 +78,6 @@ const Card = ({
     }, [currentFocusedElm]);
 
 
-    const maskCardNumber = (cardNumber) => {
-        let cardNumberArr = cardNumber.split('');
-        cardNumberArr.forEach((val, index) => {
-            if (index > 4 && index < 5) {
-                if (cardNumberArr[index] !== '') {
-                    cardNumberArr[index] = '*';
-                }
-            }
-        });
-
-        return cardNumberArr;
-    };
-
     return (
         <>
              
